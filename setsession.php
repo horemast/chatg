@@ -9,8 +9,8 @@ if (mb_substr($_POST["message"], 0, 1, 'UTF-8') === '画') {
     ];
 } else {
     $postData = [
-        "model" => "gpt-3.5-turbo", //这里可以修改成gpt-4，gpt-4-1106-preview等，如果您的APIKEY有权限就可以使用GPT4模型
-        "temperature" => 0,
+        "model" => "gpt-4o-mini", //这里可以修改成gpt-4，gpt-4-1106-preview等，如果您的APIKEY有权限就可以使用GPT4模型
+        "temperature" => 0.3,
         "stream" => true,
         "messages" => [],
     ];
